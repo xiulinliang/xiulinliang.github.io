@@ -44,6 +44,23 @@
 
 <body>
   <div id="container" q-class="show:isCtnShow">
+
+    <a class="fork" href="https://github.com/xiulinliang" target="_blank" rel="noopener"><img width="149" height="149" 
+      src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149" 
+      class="attachment-full size-full" 
+      alt="Fork me on GitHub" 
+      data-recalc-dims="1">
+    </a>
+    <style>
+      .fork{display:none;}
+      .fork{position:fixed; 
+               z-index:999;
+               top:0;
+               right:.5em
+      }
+      @media(min-width:768px){.fork{display:inline;}}
+    </style>
+
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
@@ -94,7 +111,7 @@
 					<a class="mail" target="_blank" href="mailto:juebushibai@126.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
-			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=228 height=52 src="//music.163.com/outchain/player?type=2&id=28387594&auto=1&height=32"></iframe>
+			
 		</nav>
 	</header>		
 </div>
@@ -161,7 +178,7 @@
 
       <div id="wrapper" class="body-wrap">
         <div class="menu-l">
-          <div class="canvas-wrap">
+          <div class="canvas-wrap">    
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
@@ -631,6 +648,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     </div>
 
 </div>
+
   </div>
 </body>
 </html>
