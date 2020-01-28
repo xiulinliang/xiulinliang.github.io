@@ -182,21 +182,21 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-测试markdown文档" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-泛型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         <!-- 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/undefined/uncategorized/2020-01-07-%E6%B5%8B%E8%AF%95markdown%E6%96%87%E6%A1%A3.html">测试markdown文档</a>
+      <a class="article-title" href="/2020/01/28/%E6%B3%9B%E5%9E%8B/">泛型</a>
     </h1>
   
  -->
         
         
-<a href="/undefined/uncategorized/2020-01-07-%E6%B5%8B%E8%AF%95markdown%E6%96%87%E6%A1%A3.html" class="archive-article-date">
-  	<time datetime="2020-01-07T13:43:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
+<a href="/2020/01/28/%E6%B3%9B%E5%9E%8B/" class="archive-article-date">
+  	<time datetime="2020-01-28T14:30:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-28</time>
 </a>
         <!-- 开始添加字数统计-->
         
@@ -205,7 +205,145 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">69字</span>
+        <span class="post-count">3.8k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">16分</span>
+      </span>
+    </span>
+</div>
+          
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      <center><p>
+  
+    <h1 itemprop="name">
+      <a class="article-title_code_ant" href="/2020/01/28/%E6%B3%9B%E5%9E%8B/">泛型</a>
+    </h1>
+  
+</p></center>
+      
+        <h3 id="什么是泛型"><a href="#什么是泛型" class="headerlink" title="什么是泛型"></a>什么是泛型</h3><blockquote>
+<p>泛型是在.Net Framework 2.0时推出的语法（非语法糖）；在各项目中是最为常见，可见其重要性。<br>泛型主要是基于解决“复用”的问题上衍生而出，下面且听我娓娓道来……</p>
+</blockquote>
+<h3 id="为什么使用泛型"><a href="#为什么使用泛型" class="headerlink" title="为什么使用泛型"></a>为什么使用泛型</h3><blockquote>
+<p>在1.0版本时，是通过OOP三大特性之一的继承，变相生成“泛型”的雏形。</p>
+<p>代码及执行结果如下：</p>
+</blockquote>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">ShowObjeck</span>(<span class="params"><span class="keyword">object</span> oParameter</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     Console.WriteLine(</span><br><span class="line">        <span class="string">$"这是<span class="subst">&#123;<span class="keyword">typeof</span>(CommonMethod)&#125;</span>,"</span> +</span><br><span class="line">        <span class="string">$"参数是<span class="subst">&#123;oParameter.GetType().Name&#125;</span>,"</span> +</span><br><span class="line">        <span class="string">$"类型是<span class="subst">&#123;oParameter&#125;</span>"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://q3zv47fy9.bkt.clouddn.com/0101.jpg" alt="0101"></p>
+<blockquote>
+<p>从结果中不难看出，实现了代码的可复用性；其实是根据以下两条理论实现的：</p>
+<ol>
+<li>object类型是一切类型的父类。</li>
+<li>通过继承，子类拥有父类的一切属性和行为，任何父类出现的地方，都可以用子类来代替。</li>
+</ol>
+<p>但是，objeck类型的方法又引出另外一个问题：装箱、拆箱；损耗程序的性能。</p>
+<p>好在微软在.net framework2.0时，推出了泛型！（此刻，应有欢呼~ヾ(@^▽^@)ノ）</p>
+</blockquote>
+        
+      
+      <!-- 《添加版权声明 -->
+      
+        <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare" hidden="hidden"></div>
+
+<!-- 添加版权声明》 -->
+      
+      <!-- 添加版权声明》 -->
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Net</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/01/28/%E6%B3%9B%E5%9E%8B/">展开全文 >></a>
+        </p>
+      
+
+      
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+  
+    <article id="post-一本书，几句话" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        <!-- 
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/28/%E4%B8%80%E6%9C%AC%E4%B9%A6%EF%BC%8C%E5%87%A0%E5%8F%A5%E8%AF%9D/">一本书，几句话</a>
+    </h1>
+  
+ -->
+        
+        
+<a href="/2020/01/28/%E4%B8%80%E6%9C%AC%E4%B9%A6%EF%BC%8C%E5%87%A0%E5%8F%A5%E8%AF%9D/" class="archive-article-date">
+  	<time datetime="2020-01-28T14:19:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-28</time>
+</a>
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">130字</span>
       </span>
     </span>
 
@@ -227,16 +365,24 @@
       <center><p>
   
     <h1 itemprop="name">
-      <a class="article-title_code_ant" href="/undefined/uncategorized/2020-01-07-%E6%B5%8B%E8%AF%95markdown%E6%96%87%E6%A1%A3.html">测试markdown文档</a>
+      <a class="article-title_code_ant" href="/2020/01/28/%E4%B8%80%E6%9C%AC%E4%B9%A6%EF%BC%8C%E5%87%A0%E5%8F%A5%E8%AF%9D/">一本书，几句话</a>
     </h1>
   
 </p></center>
       
-        <h1 id="一级目录"><a href="#一级目录" class="headerlink" title="一级目录"></a>一级目录</h1><h2 id="二级目录"><a href="#二级目录" class="headerlink" title="二级目录"></a>二级目录</h2><blockquote>
-<p>内容内容内容内容内容内容内容内容内容内容内容内容</p>
+        <blockquote>
+<p>读一本书，留几句话……</p>
 </blockquote>
-<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Console.WriteLine(<span class="string">"你今年多大了？"</span>)；</span><br><span class="line"><span class="keyword">string</span> age=Console.ReadLine();</span><br><span class="line"><span class="keyword">int</span> age1=Convert.ToInt32(age);</span><br><span class="line"><span class="keyword">bool</span> result=age1&gt;<span class="number">23</span>;</span><br><span class="line"><span class="keyword">if</span>(result)</span><br><span class="line">&#123;</span><br><span class="line">	Console.WriteLine(<span class="string">"可以结婚了"</span>)</span><br><span class="line">&#125;</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
-        
+<p>从明天起，关心粮食和蔬菜</p>
+<p>我有一所房子，面朝大海，春暖花开</p>
+<p>—— 《海子的诗》 作者：海子</p>
+<hr>
+<p>如今的我，已经没有什么幸福和不幸可言了。</p>
+<p>一切都终将会过去的。</p>
+<p>我在所谓的人类世界里，过着如阿鼻地狱般痛苦煎熬生活的日子，我感到唯一具有真理的话就是这句话了。</p>
+<p>一切都终将会过去的。</p>
+<p>—— 《人间失格》 作者：太宰治</p>
+
       
       <!-- 《添加版权声明 -->
       
@@ -271,7 +417,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/undefined/uncategorized/2020-01-07-%E6%B5%8B%E8%AF%95markdown%E6%96%87%E6%A1%A3.html">展开全文 >></a>
+          <a class="article-more-a" href="/2020/01/28/%E4%B8%80%E6%9C%AC%E4%B9%A6%EF%BC%8C%E5%87%A0%E5%8F%A5%E8%AF%9D/">展开全文 >></a>
         </p>
       
 
@@ -401,6 +547,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Net</a>
               </li>
             
             <div class="clearfix"></div>
